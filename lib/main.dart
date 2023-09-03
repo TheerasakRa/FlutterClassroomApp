@@ -170,7 +170,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                     image: DecorationImage(
-                      image: NetworkImage(course[3]),
+                      image: AssetImage(course[3]),
                       fit: BoxFit.cover,
                     ),
                   ),
