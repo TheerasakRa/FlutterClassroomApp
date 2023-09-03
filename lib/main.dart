@@ -26,7 +26,6 @@ class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title});
 
   final String title;
-
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
@@ -182,7 +181,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        course[1] + " " + course[0].toString(),
+                        course[0].toString() + " " + course[1],
                         style: TextStyle(
                           color: Colors.white,
                         ),
