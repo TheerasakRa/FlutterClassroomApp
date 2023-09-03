@@ -146,13 +146,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      body: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: isMobile ? 1 : 4,
-          mainAxisSpacing: 10,
-          crossAxisSpacing: 10,
-          childAspectRatio: isMobile ? 3 : 1.5,
-        ),
+      body: ListView.builder(
         itemCount: courses.length,
         itemBuilder: (context, index) {
           final course = courses[index];
@@ -167,7 +161,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 Container(
                   width: double.infinity,
-                  height: isMobile ? 400 : 120,
+                  height: isMobile ? 150 : 120,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     image: DecorationImage(
@@ -199,7 +193,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             ),
-            
           );
         },
       ),
